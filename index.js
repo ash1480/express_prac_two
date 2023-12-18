@@ -1,9 +1,8 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3000;
-// const port = process.env.PORT || 3000;
-// const ashvar = process.env.ASHVAR || "server is up";
+const port = process.env.PORT || 3000;
+const ashvar = process.env.ASHVAR || "server is up";
 
 app.use(express.static("public"));
 
